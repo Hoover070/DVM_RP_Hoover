@@ -16,8 +16,8 @@ max_results = 100
 while True:
     query_params = {
         'search_query': 'all:artificial intelligence AND submittedDate:[20100101 TO 20201231]',
-        'start': start_index,
-        'max_results': max_results  # max is 100
+        'start': 0, #start_index,
+        'max_results': 99, #max_results  # max is 100
     }
 
     # send the access request to the arXiv API
@@ -27,10 +27,11 @@ while True:
     # extract and save the data
     entries = soup.find_all('entry')
     for entry in entries:
-        title = entry.title.text
-        year = entry.published.text
-        affiliations = entry.affiliation.text
+        title = entry.title
+        year = entry.published
+        affiliations = entry.affiliation
         saved_papers.append([title, year, affiliations])
+
     if len(entries) < max_results:
         break
 
@@ -38,7 +39,7 @@ while True:
     time.sleep(3)  # Pause to be considerate, they advise 2 seconds so i added 1 more
 
 # Create a DataFrame
-df = pd.DataFrame(saved_papers, columns=['Title', 'Year', 'Authors', 'Affiliations'])
+df = pd.DataFrame(saved_papers, columns=['Title', 'Year', 'Affiliations'])
 
 
 

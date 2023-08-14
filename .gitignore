@@ -3,3 +3,6 @@ data/*.csv
 
 # Ignore all PNG files in the plots directory
 plots/*.png
+
+#Ignore gitIgnore added file
+..gitignore.swp

@@ -1,0 +1,5 @@
+# Ignore all CSV files in the data directory
+data/*.csv
+
+# Ignore all PNG files in the plots directory
+plots/*.png

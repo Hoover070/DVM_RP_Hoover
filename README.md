@@ -1,4 +1,4 @@
-# DVM_RP_Hoover
+# Mapping AI research over the past 20 years
 Welcome to William Hoover's repository for the Data Visualization and Modeling Research Project conducted online at Full Sail University. This project encapsulates an in-depth analysis and visualization of the progression of Machine Learning and Artificial Intelligence research over the past two decades, leveraging data from arxiv.org.
 
 Project Overview:

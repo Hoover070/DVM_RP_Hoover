@@ -31,6 +31,4 @@ Technologies Used:
     Various Data Visualization Libraries (e.g., Matplotlib, Seaborn)
     arxiv.org API
 
-Executable:
-
-    Run the provided executable to launch the GUI, get updated data, visualize the research evolution graphs, and save them to your computer.
+Contact: For any inquiries or discussions related to this project, feel free to reach out at billhoover070@gmail.com or https://www.linkedin.com/in/williamhoover70/.
